@@ -13,7 +13,6 @@ body {
     display: grid;
     place-items: center;
     padding: 10px;
-    background-color: grey;
 }
 
 .container {
@@ -21,7 +20,7 @@ body {
     height: 100%;
     display: flex;
     position: relative;
-    background-color: white;
+    gap: 10px;
 }
 
 header,
@@ -95,5 +94,4 @@ footer {
     height: 10%;
     display: grid;
     place-items: center;
-    background-color: white;
 }
