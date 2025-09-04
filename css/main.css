@@ -10,7 +10,7 @@
 
 :root {
     --white-space: 10px;
-    --primary-color: #647FBC;
+    --primary-color: white;
 }
 
 body {
@@ -18,6 +18,7 @@ body {
     display: grid;
     place-items: center;
     padding: var(--white-space);
+    background-color: #B3C8CF;
 }
 
 .container {
@@ -43,7 +44,7 @@ header {
     width: 100%;
     height: 50%;
     background-color: var(--primary-color);
-    color: white;
+    color: black;
     border-radius: var(--white-space);
 }
 
@@ -54,6 +55,14 @@ header {
     justify-content: space-evenly;
     padding: var(--white-space);
     text-align: center;
+    position: relative;
+}
+
+.profile a {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: black;
 }
 
 .profile h2 {
@@ -65,7 +74,6 @@ header {
     width: 150px;
     object-fit: contain;
     border-radius: 50%;
-    background-color: white;
 }
 
 .menu {
@@ -82,14 +90,18 @@ header {
     gap: var(--white-space);
     width: 100%;
     height: calc(100% / 5);
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #B3C8CF;
     padding: var(--white-space);
-    color: white;
+    color: black;
 }
 
 .menu-item:active {
-    background-color: lightskyblue;
+    background-color: #B3C8CF;
     color: black;
+}
+
+.menu-item:hover {
+    color: #567c88;
 }
 
 .menu-item:first-child {
@@ -122,8 +134,8 @@ main {
 .section {
     width: 100%;
     height: 90dvh;
-    border-bottom: 1px solid #e4e4e4;
-    color: white;
+    border-bottom: 1px solid #B3C8CF;
+    color: black;
 }
 
 .section:last-child {
@@ -133,11 +145,22 @@ main {
 .section h2 {
     width: 100%;
     height: 10%;
-    padding: var(--white-space);
-    text-align: center;
-    display: grid;
-    place-items: center;
-    border-bottom: 5px solid white;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    gap: 25px;
+    border-bottom: var(--white-space) solid #B3C8CF;
+}
+
+.section h2 p {
+    font-size: .7em;
+    font-weight: normal;
+}
+
+.section h2 span {
+    width: var(--white-space);
+    height: 100%;
+    background-color: #B3C8CF;
 }
 
 main footer {
@@ -145,7 +168,6 @@ main footer {
     display: grid;
     place-items: center;
     background-color: var(--primary-color);
-    color: white;
-    border-top: 1px solid black;
+    color: black;
     border-radius: var(--white-space);
 }
