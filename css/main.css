@@ -8,11 +8,16 @@
     overflow: hidden;
 }
 
+:root {
+    --white-space: 10px;
+    --primary-color: #647FBC;
+}
+
 body {
     height: 100dvh;
     display: grid;
     place-items: center;
-    padding: 10px;
+    padding: var(--white-space);
 }
 
 .container {
@@ -36,7 +41,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: var(--white-space);
+    gap: 10px;
 }
 
 header .profile {
@@ -45,7 +51,14 @@ header .profile {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    padding: 10px;
+    padding: var(--white-space);
+    border-radius: var(--white-space);
+    text-align: center;
+}
+
+header .profile h2 {
+    font-size: 1.2em;
+    font-weight: normal;
 }
 
 header .menu {
@@ -54,7 +67,39 @@ header .menu {
     align-items: flex-start;
     justify-content: space-evenly;
     width: 100%;
-    padding: 10px;
+    /*padding: var(--white-space);*/
+    border-radius: var(--white-space);
+
+}
+
+header .menu .menu-item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--white-space);
+    flex-wrap: nowrap;
+    width: 100%;
+    height: calc(100% / 5);
+    border-bottom: 1px solid #e4e4e4;
+    padding: var(--white-space);
+    color: white;
+}
+
+header .menu .menu-item:active {
+    background-color: lightskyblue;
+    color: black;
+}
+
+header .menu .menu-item:nth-child(1) {
+    border-top-left-radius: var(--white-space);
+    border-top-right-radius: var(--white-space);
+}
+
+header .menu .menu-item:nth-child(5) {
+
+    border-bottom-left-radius: var(--white-space);
+    border-bottom-right-radius: var(--white-space);
+    border-bottom: none;
 }
 
 header .profile img {
@@ -66,14 +111,16 @@ header .profile img {
 
 .profile,
 .menu {
-    border: 1px solid black;
     height: 50%;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 main {
     width: 80%;
     height: 100%;
     overflow-y: auto;
+    padding: var(--white-space);
 }
 
 main .section {
@@ -94,4 +141,6 @@ footer {
     height: 10%;
     display: grid;
     place-items: center;
+    background-color: white;
+    border-top: 1px solid black;
 }
