@@ -77,6 +77,45 @@ header {
     border: 2px dashed black;
 }
 
+.profile .status {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+    padding: var(--white-space);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-top: var(--white-space);
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: var(--white-space);
+    font-size: .75em;
+    overflow: visible;
+}
+
+.profile .status i {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    margin-top: 1px;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+.profile .emote {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    padding: var(--white-space);
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 75px;
+    margin-top: var(--white-space);
+}
+
 .menu {
     display: flex;
     flex-direction: column;
