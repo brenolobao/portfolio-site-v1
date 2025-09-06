@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: Roboto;
     overflow: hidden;
+    /*border: 1px solid black;*/
 }
 
 :root {
@@ -104,17 +105,6 @@ header {
     margin-top: 1px;
     padding: 1px;
     border: 1px solid black;
-}
-
-.profile .emote {
-    position: absolute;
-    z-index: 2;
-    background-color: white;
-    padding: var(--white-space);
-    border: 1px solid black;
-    border-radius: 50%;
-    margin-left: 75px;
-    margin-top: var(--white-space);
 }
 
 .menu {
