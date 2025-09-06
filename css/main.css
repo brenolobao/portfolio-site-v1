@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: Roboto;
     overflow: hidden;
-    /*border: 1px solid black;*/
 }
 
 :root {
@@ -183,6 +182,10 @@ main {
     border-bottom: 1px solid lightgrey;
 }
 
+.section h2 i {
+    font-size: 1.4em;
+}
+
 .section h2 p {
     font-size: .7em;
     font-weight: normal;
@@ -190,11 +193,29 @@ main {
 
 main footer {
     height: 10%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    padding: var(--white-space);
+    justify-content: space-between;
     background-color: var(--primary-color);
     color: black;
     border-radius: var(--white-space);
+}
+
+main footer .lang,
+.theme {
+    display: flex;
+    padding: var(--white-space);
+    align-items: center;
+    justify-content: space-evenly;
+    gap: var(--white-space);
+}
+
+.lang button,
+.theme button {
+    padding: var(--white-space);
+    border-radius: 50%;
+    border: 1px solid lightgray;
 }
 
 
