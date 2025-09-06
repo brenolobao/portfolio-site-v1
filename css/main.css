@@ -131,7 +131,7 @@ header {
     gap: var(--white-space);
     width: 100%;
     height: calc(100% / 5);
-    border-bottom: 1px solid var(--bgcolor);
+    border-bottom: 1px solid lightgray;
     padding: var(--white-space);
     color: black;
 }
@@ -240,6 +240,7 @@ main footer {
 
 .projects {
     width: 60%;
+    border-right: 1px solid lightgray;
 }
 
 .git {
@@ -262,9 +263,10 @@ main footer {
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 2px dashed black;
-    border-radius: 10px;
+    border-radius: var(--white-space);
+    border: 1px solid lightgrey;
 }
+
 
 .card img {
     width: 20%;
@@ -303,11 +305,24 @@ main footer {
 }
 
 .stacks span {
+    border: 1px solid black;
+    padding: 7px;
+    color: white;
     background-color: var(--bgcolor);
-    padding: 8px;
-    color: var(--primary-color);
     font-size: 0.8em;
-    border-radius: 10px;
+    border-radius: var(--white-space);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 7.5px;
+    cursor: pointer;
+}
+
+
+.stacks span img {
+    width: 15px;
+    object-fit: contain;
+    filter: invert(100%);
 }
 
 .links {
