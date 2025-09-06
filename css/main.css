@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --white-space: 10px;
+    --primary-color: white;
+    --bgcolor: #4b4070;
+    --text-color: black;
+    --border-light: 1px solid lightgray;
+    --border-black: 1px solid black;
+    --gap-8: 8px;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Roboto;
     overflow: hidden;
-}
-
-:root {
-    --white-space: 10px;
-    --primary-color: white;
-    --bgcolor: #4b4070;
 }
 
 body {
@@ -26,7 +30,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 10px;
+    gap: var(--white-space);
 }
 
 header {
@@ -37,7 +41,7 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: var(--white-space);
-    gap: 10px;
+    gap: var(--white-space);
 }
 
 .profile,
@@ -45,7 +49,7 @@ header {
     width: 100%;
     height: 50%;
     background-color: var(--primary-color);
-    color: black;
+    color: var(--text-color);
     border-radius: var(--white-space);
 }
 
@@ -63,7 +67,7 @@ header {
     position: absolute;
     top: 15px;
     right: 15px;
-    color: black;
+    color: var(--text-color);
 }
 
 .profile h2 {
@@ -75,17 +79,17 @@ header {
     width: 150px;
     object-fit: contain;
     border-radius: 50%;
-    border: 2px dashed black;
+    border: 2px dashed var(--text-color);
 }
 
 .profile .status {
     position: absolute;
     z-index: 2;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: var(--white-space);
     padding: var(--white-space);
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--primary-color);
+    border: var(--border-black);
     border-radius: 25px;
     margin-top: var(--white-space);
     display: flex;
@@ -103,7 +107,7 @@ header {
     background-color: lightgreen;
     margin-top: 1px;
     padding: 1px;
-    border: 1px solid black;
+    border: var(--border-black);
 }
 
 .menu {
@@ -120,18 +124,18 @@ header {
     gap: var(--white-space);
     width: 100%;
     height: calc(100% / 5);
-    border-bottom: 1px solid lightgray;
+    border-bottom: var(--border-light);
     padding: var(--white-space);
-    color: black;
+    color: var(--text-color);
 }
 
 .menu-item:active {
     background-color: var(--bgcolor);
-    color: black;
+    color: var(--text-color);
 }
 
 .menu-item:hover {
-    color: #567c88;
+    color: var(--bgcolor);
 }
 
 .menu-item:first-child {
@@ -159,13 +163,13 @@ main {
     width: 100%;
     border-radius: var(--white-space);
     background-color: var(--primary-color);
+    scroll-behavior: smooth;
 }
 
 .section {
     width: 100%;
     height: 90dvh;
-    border-bottom: 1px solid var(--bgcolor);
-    color: black;
+    color: var(--text-color);
 }
 
 .section:last-child {
@@ -179,7 +183,7 @@ main {
     align-items: center;
     padding-left: 25px;
     gap: 25px;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: var(--border-light);
 }
 
 .section h2 i {
@@ -198,7 +202,7 @@ main footer {
     padding: var(--white-space);
     justify-content: space-between;
     background-color: var(--primary-color);
-    color: black;
+    color: var(--text-color);
     border-radius: var(--white-space);
 }
 
@@ -215,22 +219,21 @@ main footer .lang,
 .theme button {
     padding: var(--white-space);
     border-radius: 50%;
-    border: 1px dashed black;
+    border: 1px dashed var(--text-color);
 }
 
 .active-button {
     background-color: var(--bgcolor);
-    color: white;
+    color: var(--primary-color);
 }
-
 
 .itens-wrapper {
     width: 100%;
     height: 82%;
-    padding: 8px;
+    padding: var(--gap-8);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--gap-8);
 }
 
 .itens-wrapper .projects-section {
@@ -250,7 +253,7 @@ main footer .lang,
 
 .projects {
     width: 60%;
-    border-right: 1px solid lightgray;
+    border-right: var(--border-light);
 }
 
 .git {
@@ -265,18 +268,17 @@ main footer .lang,
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 8px;
+    gap: var(--gap-8);
 }
 
 .card {
-    padding: 8px;
+    padding: var(--gap-8);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--gap-8);
     border-radius: var(--white-space);
-    border: 1px solid lightgrey;
+    border: var(--border-light);
 }
-
 
 .card img {
     width: 20%;
@@ -311,13 +313,13 @@ main footer .lang,
     display: flex;
     width: 100%;
     align-items: center;
-    gap: 8px;
+    gap: var(--gap-8);
 }
 
 .stacks span {
-    border: 1px solid black;
+    border: var(--border-black);
     padding: 7px;
-    color: white;
+    color: var(--primary-color);
     background-color: var(--bgcolor);
     font-size: 0.8em;
     border-radius: var(--white-space);
@@ -327,7 +329,6 @@ main footer .lang,
     gap: 7.5px;
     cursor: pointer;
 }
-
 
 .stacks span img {
     width: 15px;
@@ -345,7 +346,7 @@ main footer .lang,
 }
 
 .links a {
-    color: black;
+    color: var(--text-color);
 }
 
 .links a i {
