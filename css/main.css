@@ -215,7 +215,12 @@ main footer .lang,
 .theme button {
     padding: var(--white-space);
     border-radius: 50%;
-    border: 1px solid lightgray;
+    border: 1px dashed black;
+}
+
+.active-button {
+    background-color: var(--bgcolor);
+    color: white;
 }
 
 
