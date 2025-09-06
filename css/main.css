@@ -180,18 +180,12 @@ main {
     align-items: center;
     padding-left: 25px;
     gap: 25px;
-    border-bottom: var(--white-space) solid var(--bgcolor);
+    border-bottom: 1px solid lightgrey;
 }
 
 .section h2 p {
     font-size: .7em;
     font-weight: normal;
-}
-
-.section h2 span {
-    width: var(--white-space);
-    height: 100%;
-    background-color: var(--bgcolor);
 }
 
 main footer {
