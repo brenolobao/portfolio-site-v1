@@ -352,3 +352,100 @@ main footer .lang,
 .links a i {
     font-size: 1.5em;
 }
+
+#skills .itens-wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all .3;
+}
+
+#skills .itens-wrapper .section {
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.hard {
+    width: 60%;
+    border-right: 1px solid black;
+}
+
+.soft {
+    width: 40%;
+}
+
+.soft .cards-wrapper {
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+}
+
+.soft-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px dashed black;
+    display: flex;
+    align-items: center;
+}
+
+#skills .itens-wrapper .section .section-title {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#skills .itens-wrapper .section .cards-wrapper {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.hard-card,
+.soft-card {
+    cursor: pointer;
+    user-select: none;
+}
+
+.hard-card {
+    width: calc((100% / 4) - 20px);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px dashed black;
+}
+
+.hard-card:hover {
+    box-shadow: 10px 10px 0px black;
+    transform: translateX(-10px) translateY(-10px);
+}
+
+.soft-card:hover {
+    box-shadow: -10px -0px 0px black;
+    transform: translateX(10px);
+}
+
+.hard-card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.hard-card progress {
+    width: 100%;
+}
