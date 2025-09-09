@@ -312,6 +312,18 @@ main footer {
     transition: all .2s;
 }
 
+.soft-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soft-card img {
+    width: 20px;
+    object-fit: contain;
+}
+
 /* Project cards */
 .card img {
     width: 20%;
