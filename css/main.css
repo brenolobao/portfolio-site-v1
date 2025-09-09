@@ -347,10 +347,10 @@ main footer {
 }
 
 .stacks span {
-    border: var(--border-black);
+    border: 1px solid var(--bgcolor);
     padding: 7px;
-    color: var(--primary-color);
-    background-color: var(--bgcolor);
+    color: var(--bgcolor);
+    background-color: var(--primary-color);
     font-size: 0.8em;
     border-radius: var(--white-space);
     display: flex;
@@ -362,7 +362,6 @@ main footer {
 .stacks span img {
     width: 15px;
     object-fit: contain;
-    filter: invert(100%);
 }
 
 /* Links */
