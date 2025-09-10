@@ -256,13 +256,15 @@ main footer {
 
 /* Layout de duas colunas */
 .projects,
-.hard {
+.hard,
+.experience {
     width: 60%;
     border-right: var(--border-light);
 }
 
 .git,
-.soft {
+.soft,
+.obj {
     width: 40%;
 }
 
