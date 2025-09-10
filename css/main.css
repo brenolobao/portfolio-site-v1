@@ -17,6 +17,7 @@
     box-sizing: border-box;
     font-family: Roboto;
     overflow: hidden;
+    /*border: 1px solid black;*/
 }
 
 body {
@@ -442,4 +443,49 @@ main footer {
 .soft-card:hover {
     box-shadow: -10px 0px 0px black;
     transform: translateX(10px);
+}
+
+.git-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--white-space);
+    padding: var(--white-space);
+}
+
+.git-profile .profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.git-profile img {
+    width: 35%;
+    border-radius: 50%;
+    padding: var(--white-space);
+    border: 2px dashed black;
+    object-fit: contain;
+}
+
+.git-profile .cards-wrapper {
+    gap: none;
+}
+
+.git-profile .cards-wrapper .card {
+    width: 100%;
+    height: calc(100% / 5);
+}
+
+.git-profile .cards-wrapper .card a {
+    width: 100%;
+    padding: var(--white-space);
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.git-profile .cards-wrapper .card a p {
+    font-size: .8em;
+    color: grey;
 }
