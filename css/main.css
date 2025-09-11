@@ -491,3 +491,15 @@ main footer {
     font-size: .8em;
     color: grey;
 }
+
+.obj .cards-wrapper .card {
+    text-align: justify;
+}
+
+.experience h4 {
+    height: 5%;
+}
+
+.experience .cards-wrapper {
+    height: 40%;
+}
