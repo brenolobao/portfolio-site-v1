@@ -494,6 +494,13 @@ main footer {
 
 .obj .cards-wrapper .card {
     text-align: justify;
+    border: none;
+    line-height: 1.5em;
+}
+
+.obj .cards-wrapper .card:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 .experience h4 {
