@@ -503,10 +503,12 @@ main footer {
     box-shadow: none;
 }
 
-.experience h4 {
-    height: 5%;
+.experience .cards-wrapper .card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.experience .cards-wrapper {
-    height: 40%;
+.experience .cards-wrapper .card p {
+    color: grey;
 }
