@@ -507,8 +507,28 @@ main footer {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.experience .cards-wrapper .card:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 .experience .cards-wrapper .card p {
     color: grey;
+    font-size: .85em;
+}
+
+.experience .cards-wrapper .card h3 {
+    font-size: 1.1em;
+}
+
+.experience .cards-wrapper .card h4 {
+    font-size: .9em;
+}
+
+.experience .cards-wrapper .card ul li {
+    font-size: .9em;
 }
