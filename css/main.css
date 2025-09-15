@@ -10,7 +10,14 @@
     --border-black: 1px solid black;
 }
 
-/* Reset e configurações gerais */
+[data-theme="dark"] {
+    --primary-color: #2d2d2d;
+    --bgcolor: #1a1a1a;
+    --text-color: white;
+    --border-light: 1px solid #444;
+    --border-black: 1px solid white;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -26,9 +33,9 @@ body {
     place-items: center;
     padding: var(--white-space);
     background-color: var(--bgcolor);
+    transition: background-color 0.3s ease;
 }
 
-/* Layout principal */
 .container {
     width: 100%;
     height: 100%;
@@ -56,7 +63,6 @@ main {
     gap: var(--white-space);
 }
 
-/* Componentes base */
 .profile,
 .menu {
     width: 100%;
@@ -64,9 +70,9 @@ main {
     background-color: var(--primary-color);
     color: var(--text-color);
     border-radius: var(--white-space);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Profile */
 .profile {
     display: flex;
     flex-direction: column;
@@ -122,7 +128,6 @@ main {
     border: var(--border-black);
 }
 
-/* Menu */
 .menu {
     display: flex;
     flex-direction: column;
@@ -140,6 +145,7 @@ main {
     border-bottom: var(--border-light);
     padding: var(--white-space);
     color: var(--text-color);
+    transition: color 0.3s ease;
 }
 
 .menu-item:active {
@@ -161,19 +167,20 @@ main {
     border-bottom: none;
 }
 
-/* Seções */
 .section-wrapper {
     height: 90%;
     width: 100%;
     border-radius: var(--white-space);
     background-color: var(--primary-color);
     scroll-behavior: smooth;
+    transition: background-color 0.3s ease;
 }
 
 .section {
     width: 100%;
     height: 90dvh;
     color: var(--text-color);
+    transition: color 0.3s ease;
 }
 
 .section h2 {
@@ -195,7 +202,6 @@ main {
     font-weight: normal;
 }
 
-/* Footer */
 main footer {
     height: 10%;
     display: flex;
@@ -205,6 +211,7 @@ main footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     border-radius: var(--white-space);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .lang,
@@ -221,14 +228,22 @@ main footer {
     padding: var(--white-space);
     border-radius: 50%;
     border: 1px dashed var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang button:hover,
+.theme button:hover {
+    transform: scale(1.1);
 }
 
 .active-button {
-    background-color: var(--bgcolor);
-    color: var(--primary-color);
+    background-color: var(--bgcolor) !important;
+    color: var(--primary-color) !important;
 }
 
-/* Items wrapper */
 .itens-wrapper {
     width: 100%;
     height: 82%;
@@ -254,7 +269,6 @@ main footer {
     font-size: 1.4em;
 }
 
-/* Layout de duas colunas */
 .projects,
 .hard,
 .experience {
@@ -268,7 +282,6 @@ main footer {
     width: 40%;
 }
 
-/* Cards wrapper */
 .cards-wrapper,
 #skills .itens-wrapper .section .cards-wrapper {
     height: 90%;
@@ -296,7 +309,6 @@ main footer {
     overflow-y: auto;
 }
 
-/* Cards base */
 .card {
     padding: var(--gap-8);
     display: flex;
@@ -327,7 +339,6 @@ main footer {
     object-fit: contain;
 }
 
-/* Project cards */
 .card img {
     width: 20%;
     height: 100%;
@@ -353,7 +364,6 @@ main footer {
     text-align: justify;
 }
 
-/* Stacks */
 .stacks {
     display: flex;
     width: 100%;
@@ -379,7 +389,6 @@ main footer {
     object-fit: contain;
 }
 
-/* Links */
 .links {
     height: 100%;
     width: 10%;
@@ -397,7 +406,6 @@ main footer {
     font-size: 1.5em;
 }
 
-/* Hard cards */
 .hard-card {
     width: calc((100% / 4) - 20px);
     height: 150px;
@@ -411,7 +419,7 @@ main footer {
 
 .card:hover,
 .hard-card:hover {
-    box-shadow: 10px 10px 0px black;
+    box-shadow: 10px 10px 0px var(--text-color);
     transform: translateX(-10px) translateY(-10px);
 }
 
@@ -433,7 +441,6 @@ main footer {
     padding: var(--white-space);
 }
 
-/* Soft cards */
 .soft-card {
     width: 100%;
     padding: var(--white-space);
@@ -443,7 +450,7 @@ main footer {
 }
 
 .soft-card:hover {
-    box-shadow: -10px 0px 0px black;
+    box-shadow: -10px 0px 0px var(--text-color);
     transform: translateX(10px);
 }
 
@@ -464,7 +471,7 @@ main footer {
     width: 35%;
     border-radius: 50%;
     padding: var(--white-space);
-    border: 2px dashed black;
+    border: 2px dashed var(--text-color);
     object-fit: contain;
 }
 
@@ -481,7 +488,7 @@ main footer {
     width: 100%;
     padding: var(--white-space);
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;

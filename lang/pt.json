@@ -1,0 +1,109 @@
+{
+    "profile": {
+        "name": "Breno Lobão",
+        "role": "Desenvolvedor Front-end",
+        "age": "24 anos",
+        "status": "disponivel"
+    },
+    "menu": {
+        "home": "Pagina Inicial",
+        "about": "Sobre",
+        "skills": "Habilidades",
+        "projects": "Projetos & Git",
+        "contacts": "Contatos"
+    },
+    "sections": {
+        "home": {
+            "title": "Pagina inicial",
+            "subtitle": "Principais informações"
+        },
+        "about": {
+            "title": "Sobre",
+            "subtitle": "Minha pessoa, experiências e objetivos",
+            "experience": {
+                "title": "Experiências e Formação",
+                "items": [
+                    {
+                        "company": "Starke Brasil Dev",
+                        "position": "Desenvolvedor front-end junior",
+                        "tasks": [
+                            "Criação de uma landing page completa usando Next.js",
+                            "Criação de componentes usando React.js, Html, Css e Javascript"
+                        ],
+                        "period": "abr de 2021 - dez de 2021 - 9 meses"
+                    },
+                    {
+                        "company": "Starke Brasil Dev",
+                        "position": "Estagiário",
+                        "tasks": [
+                            "Criação de componentes web usando Html, Css e Javascript",
+                            "Refatoração de codigo"
+                        ],
+                        "period": "fev de 2021 - abr de 2021 - 3 meses"
+                    },
+                    {
+                        "company": "Uniasselvi",
+                        "position": "Analise e desenvolvimento de sistemas - ADS",
+                        "period": "2021 - 2024 - 6 semestres"
+                    }
+                ]
+            },
+            "objective": {
+                "title": "Objetivo",
+                "content": "Estou em busca de uma oportunidade para trabalhar como desenvolvedor front-end junior no momento, mas também tenho facilidade com raciocínio lógico e linguagens de programação no geral, inclusive programação orientada a objetos.<br><br>Tenho experiencia com Html, Css, Javascript e ja trabalhei com frameworks e bibliotecas como React.js, Next.js, Vue.js e Bootstrap e tenho conhecimento básico em Java e SQL. Gostaria de aplicar meus conhecimentos em projetos reais e conviver com pessoas mais experientes para que possa dar o proximo passo em minha carreira como desenvolvedor."
+            }
+        },
+        "skills": {
+            "title": "Habilidades",
+            "subtitle": "Principais habilidades",
+            "hard": "Hard",
+            "soft": "Soft",
+            "softSkills": [
+                "Raciocínio lógico",
+                "Organização",
+                "Leitura e análise",
+                "Curiosidade",
+                "Criatividade",
+                "Scrum",
+                "Kanban"
+            ]
+        },
+        "projects": {
+            "title": "Projetos & Git",
+            "subtitle": "Projetos pessoais e atividades no Git",
+            "projectsTitle": "Projetos",
+            "gitTitle": "Git",
+            "items": [
+                {
+                    "name": "Wimapping",
+                    "description": "Aplicação web para medir a velocidade e instabilidade da conexão de internet, com visualização gráfica dos resultados e opção de mapeamento por cômodos."
+                },
+                {
+                    "name": "CpuCharts",
+                    "description": "Aplicação web para comparação e análise de CPUs AMD e Intel, com dados históricos e preços."
+                },
+                {
+                    "name": "B.Log",
+                    "description": "Um blog pessoal para compartilhar ideias, conhecimento e explorar o mundo da tecnologia."
+                }
+            ],
+            "gitProfile": {
+                "commits2025": "Commits / 2025 :",
+                "contributions": "250 contribuições"
+            }
+        },
+        "contacts": {
+            "title": "Contatos",
+            "subtitle": "Escolha uma maneira de falar comigo!"
+        }
+    },
+    "footer": {
+        "changeLang": "Mudar lingua :",
+        "changeTheme": "Mudar tema :",
+        "copyright": "@ Breno Lobão - Todos os direitos reservados",
+        "lightMode": "Modo claro",
+        "darkMode": "Modo escuro",
+        "portuguese": "Português brasileiro",
+        "english": "Inglês"
+    }
+}

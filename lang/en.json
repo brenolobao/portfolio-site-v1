@@ -1,0 +1,109 @@
+{
+    "profile": {
+        "name": "Breno Lobão",
+        "role": "Front-end Developer",
+        "age": "24 years old",
+        "status": "available"
+    },
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects & Git",
+        "contacts": "Contacts"
+    },
+    "sections": {
+        "home": {
+            "title": "Home",
+            "subtitle": "Main information"
+        },
+        "about": {
+            "title": "About",
+            "subtitle": "About me, experiences and goals",
+            "experience": {
+                "title": "Experience and Education",
+                "items": [
+                    {
+                        "company": "Starke Brasil Dev",
+                        "position": "Junior front-end developer",
+                        "tasks": [
+                            "Creation of a complete landing page using Next.js",
+                            "Creation of components using React.js, Html, Css and Javascript"
+                        ],
+                        "period": "Apr 2021 - Dec 2021 - 9 months"
+                    },
+                    {
+                        "company": "Starke Brasil Dev",
+                        "position": "Intern",
+                        "tasks": [
+                            "Creation of web components using Html, Css and Javascript",
+                            "Code refactoring"
+                        ],
+                        "period": "Feb 2021 - Apr 2021 - 3 months"
+                    },
+                    {
+                        "company": "Uniasselvi",
+                        "position": "Systems Analysis and Development - ADS",
+                        "period": "2021 - 2024 - 6 semesters"
+                    }
+                ]
+            },
+            "objective": {
+                "title": "Objective",
+                "content": "I am looking for an opportunity to work as a junior front-end developer at the moment, but I also have ease with logical reasoning and programming languages in general, including object-oriented programming.<br><br>I have experience with Html, Css, Javascript and have worked with frameworks and libraries like React.js, Next.js, Vue.js and Bootstrap and have basic knowledge in Java and SQL. I would like to apply my knowledge in real projects and live with more experienced people so I can take the next step in my career as a developer."
+            }
+        },
+        "skills": {
+            "title": "Skills",
+            "subtitle": "Main skills",
+            "hard": "Hard",
+            "soft": "Soft",
+            "softSkills": [
+                "Logical reasoning",
+                "Organization",
+                "Reading and analysis",
+                "Curiosity",
+                "Creativity",
+                "Scrum",
+                "Kanban"
+            ]
+        },
+        "projects": {
+            "title": "Projects & Git",
+            "subtitle": "Personal projects and Git activities",
+            "projectsTitle": "Projects",
+            "gitTitle": "Git",
+            "items": [
+                {
+                    "name": "Wimapping",
+                    "description": "Web application to measure internet connection speed and instability, with graphical visualization of results and room mapping option."
+                },
+                {
+                    "name": "CpuCharts",
+                    "description": "Web application for comparison and analysis of AMD and Intel CPUs, with historical data and prices."
+                },
+                {
+                    "name": "B.Log",
+                    "description": "A personal blog to share ideas, knowledge and explore the world of technology."
+                }
+            ],
+            "gitProfile": {
+                "commits2025": "Commits / 2025 :",
+                "contributions": "250 contributions"
+            }
+        },
+        "contacts": {
+            "title": "Contacts",
+            "subtitle": "Choose a way to talk to me!"
+        }
+    },
+    "footer": {
+        "changeLang": "Change language :",
+        "changeTheme": "Change theme :",
+        "copyright": "@ Breno Lobão - All rights reserved",
+        "lightMode": "Light mode",
+        "darkMode": "Dark mode",
+        "portuguese": "Brazilian Portuguese",
+        "english": "English"
+    }
+}
