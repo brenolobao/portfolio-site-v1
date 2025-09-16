@@ -481,12 +481,14 @@ main footer {
     gap: none;
 }
 
-.git-profile .cards-wrapper .card {
+.git-profile .cards-wrapper .card,
+.contacts .cards-wrapper .card {
     width: 100%;
     height: calc(100% / 5);
 }
 
-.git-profile .cards-wrapper .card a {
+.git-profile .cards-wrapper .card a,
+.contacts .cards-wrapper .card a {
     width: 100%;
     padding: var(--white-space);
     text-decoration: none;
@@ -494,11 +496,24 @@ main footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
-.git-profile .cards-wrapper .card a p {
+.git-profile .cards-wrapper .card a p,
+.contacts .cards-wrapper .card a p {
     font-size: .8em;
     color: grey;
+}
+
+.contacts .cards-wrapper .card a .contact-label {
+    display: flex;
+    align-items: center;
+    gap: var(--white-space);
+}
+
+.contacts .cards-wrapper .card a .contact-label img {
+    width: 30px;
+    object-fit: contain;
 }
 
 .obj .cards-wrapper .card {
