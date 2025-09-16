@@ -10,7 +10,7 @@
         "about": "About",
         "skills": "Skills",
         "projects": "Projects & Git",
-        "contacts": "Contacts"
+        "contacts": "Contacts & Blog"
     },
     "sections": {
         "home": {
@@ -93,7 +93,7 @@
             }
         },
         "contacts": {
-            "title": "Contacts",
+            "title": "Contacts & Blog",
             "subtitle": "Choose a way to talk to me!"
         }
     },

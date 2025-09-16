@@ -271,14 +271,16 @@ main footer {
 
 .projects,
 .hard,
-.experience {
+.experience,
+.blog {
     width: 60%;
     border-right: var(--border-light);
 }
 
 .git,
 .soft,
-.obj {
+.obj,
+.contacts {
     width: 40%;
 }
 
@@ -538,4 +540,48 @@ main footer {
 
 .experience .cards-wrapper .card ul li {
     font-size: .9em;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--white-space);
+}
+
+.post-image-container {
+    width: 25%;
+}
+
+.post-content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--white-space);
+}
+
+.post-card {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: var(--white-space);
+    padding: var(--white-space);
+    border: 1px solid lightgray;
+    border-radius: var(--white-space);
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.post-excerpt {
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    font-size: .85em;
+}
+
+.post-date {
+    color: grey;
+    font-size: .8em;
 }

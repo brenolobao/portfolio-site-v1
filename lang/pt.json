@@ -10,7 +10,7 @@
         "about": "Sobre",
         "skills": "Habilidades",
         "projects": "Projetos & Git",
-        "contacts": "Contatos"
+        "contacts": "Contatos & Blog"
     },
     "sections": {
         "home": {
@@ -93,7 +93,7 @@
             }
         },
         "contacts": {
-            "title": "Contatos",
+            "title": "Contatos & Blog",
             "subtitle": "Escolha uma maneira de falar comigo!"
         }
     },
