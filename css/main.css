@@ -24,7 +24,6 @@
     box-sizing: border-box;
     font-family: Roboto;
     overflow: hidden;
-    /*border: 1px solid black;*/
 }
 
 body {
@@ -64,13 +63,19 @@ main {
 }
 
 .profile,
-.menu {
-    width: 100%;
-    height: 50%;
+.menu,
+.section-wrapper,
+main footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     border-radius: var(--white-space);
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile,
+.menu {
+    width: 100%;
+    height: 50%;
 }
 
 .profile {
@@ -170,10 +175,7 @@ main {
 .section-wrapper {
     height: 90%;
     width: 100%;
-    border-radius: var(--white-space);
-    background-color: var(--primary-color);
     scroll-behavior: smooth;
-    transition: background-color 0.3s ease;
 }
 
 .section {
@@ -208,10 +210,6 @@ main footer {
     align-items: center;
     justify-content: space-between;
     padding: var(--white-space);
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border-radius: var(--white-space);
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .lang,
@@ -291,9 +289,6 @@ main footer {
     padding: var(--white-space);
     display: flex;
     gap: var(--gap-8);
-}
-
-.cards-wrapper {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -306,7 +301,6 @@ main footer {
 }
 
 .soft .cards-wrapper {
-    flex-direction: column;
     gap: var(--white-space);
     overflow-y: auto;
 }
@@ -522,7 +516,8 @@ main footer {
     line-height: 1.5em;
 }
 
-.obj .cards-wrapper .card:hover {
+.obj .cards-wrapper .card:hover,
+.experience .cards-wrapper .card:hover {
     transform: none;
     box-shadow: none;
 }
@@ -533,11 +528,6 @@ main footer {
     width: 100%;
     cursor: pointer;
     user-select: none;
-}
-
-.experience .cards-wrapper .card:hover {
-    transform: none;
-    box-shadow: none;
 }
 
 .experience .cards-wrapper .card p {
@@ -586,7 +576,6 @@ main footer {
     border-radius: var(--white-space);
     cursor: pointer;
     user-select: none;
-
 }
 
 .post-excerpt {
